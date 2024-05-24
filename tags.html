@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>Mi primer documento HTML</title>
@@ -47,12 +48,12 @@
     </dl>
 
     <h2>Imágenes</h2>
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="250">
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" width="250">
 
     <h2>Sonido</h2>
-    <sound src="https://www.w3schools.com/html/horse.mp3" controls>
-      Your browser does not support the sound tag.
-    </sound>
+    <audio src="https://www.w3schools.com/html/horse.mp3" controls>
+      Your browser does not support the audio tag.
+    </audio>
 
     <h2>Video</h2>
     <video width="320" height="240" controls>
@@ -61,8 +62,36 @@
       Your browser does not support the video tag.
     </video>
 
-    <!-- 
-      - tablas
-     -->
+    <table cellpadding="20" border="1">
+      <thead>
+        <tr>
+          <th>Encabezado 1</th>
+          <th>Encabezado 2</th>
+          <th>Encabezado 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Fila 1, Celda 1</td>
+          <td>Fila 1, Celda 2</td>
+          <td>Fila 1, Celda 3</td>
+        </tr>
+        <tr>
+          <!-- <td>Fila 2, Celda 1</td> -->
+          <td>Fila 2, Celda 2</td>
+          <td>Fila 2, Celda 3</td>
+        </tr>
+        <tr>
+          <!-- <td>Fila 2, Celda 1</td> -->
+          <td>Fila 2, Celda 2</td>
+          <td>Fila 2, Celda 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Pie de tabla</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
